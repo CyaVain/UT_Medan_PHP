@@ -1,0 +1,8 @@
+CREATE SCHEMA `db_akademik` ;
+
+CREATE TABLE `db_akademik`.`mahasiswa` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  `address` VARCHAR(45) NULL,
+  `age` INT NULL,
+  PRIMARY KEY (`id`));

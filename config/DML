@@ -1,0 +1,13 @@
+INSERT INTO `db_akademik`.`mahasiswa`
+(`name`,
+`address`,
+`age`)
+VALUES
+("Andi",
+"Jakarta",
+20),
+("Budi",
+"Bandung",
+30);
+
+SELECT * FROM db_akademik;
