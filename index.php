@@ -33,11 +33,12 @@ include ('service/tampil.php');
             $tampil = new tampil;
             $hasil = $tampil->TampilData();
             if ($hasil) {
+                $i = 1;
                 foreach ($hasil as $row) {
                     ?>
                     <tr>
                         <td>
-                            <?= $row['id'] ?>
+                            <?= $i ?>
                         </td>
                         <td>
                             <?= $row['name'] ?>
@@ -58,8 +59,8 @@ include ('service/tampil.php');
                             </form>
                         </td>
                     </tr>
-
                     <?php
+                    $i++;
                 }
             } else {
                 echo "Data Kosong";
